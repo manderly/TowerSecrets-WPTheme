@@ -124,12 +124,12 @@ input[type="submit"],
 }
 
 ::-moz-selection {
-	background-color: #1e1e1e;
+	background-color: #7f6e13;
 	color: #fff;
 }
 
 ::selection {
-	background-color: #1e1e1e;
+	background-color: #7f6e13;
 	color: #fff;
 }
 
@@ -220,6 +220,7 @@ input,
 .post-meta,
 #description {
 	color: #636363;
+	padding-left:20px;
 }
 
 blockquote::before,
@@ -1273,6 +1274,9 @@ p.wp-caption-text {
 	line-height: 1.2;
 	margin-top: 12px;
 	margin-top: 0.75rem;
+	font-weight:normal;
+	color:#666;
+	font-size:1.2em;
 }
 
 .gallery-caption {
