@@ -379,7 +379,6 @@ h2 a:visited,
 #wrap {
 	margin: 0 auto;
 	max-width: 1152px;
-	background-color:#444;
 }
 
 #inner {
@@ -463,17 +462,18 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-	min-height: 120px;
+	min-height: 130px;
 	overflow: hidden;
 	padding-bottom: 32px;
 	padding-bottom: 2rem;
-	background-color:none;
+	background-color:transparent;
 }
 
 #title {
 	line-height: 1;
 	margin: 40px 0 8px;
 	margin: 2.5rem 0 0.5rem;
+	display:none; /*turning off title because we have an image */
 }
 
 .header-image #title {
@@ -482,6 +482,7 @@ h2 a:visited,
 
 #description {
 	line-height: 1.25;
+	display:none;
 }
 
 .header-full-width #title,
@@ -495,7 +496,7 @@ h2 a:visited,
 .header-image #title-area {
 	display: block;
 	float: left;
-	min-height: 120px;
+	min-height: 130px;
 	overflow: hidden;
 	text-indent: -9999px;
 	width: 50%;
@@ -1396,5 +1397,4 @@ p.wp-caption-text {
 		margin: 0;
 		width: 100%;
 	}
-
 }
