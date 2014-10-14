@@ -97,6 +97,7 @@ html {
 
 body {
 	line-height: 1;
+	color:#E0E0E0;
 }
 
 body,
@@ -166,6 +167,24 @@ a img {
 
 /* 03a - Font Color ----------- */
 
+/* base link color and hover color */
+a {
+	color: #b09815;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+/* nav menu links are white by default, not gold like everywhere else */
+.genesis-nav-menu a,
+.genesis-nav-menu li li a,
+.genesis-nav-menu li li a:link {
+	color: #fff;
+}
+
+/* this stuff is a mess...
 a:hover,
 body,
 h2 a,
@@ -174,23 +193,27 @@ h4.widgettitle a,
 input,
 .author,
 .date,
-.genesis-nav-menu a,
-.genesis-nav-menu li li a,
-.genesis-nav-menu li li a:link,
 .genesis-nav-menu li li a:visited,
 .post-comments,
 #title a,
 #title a:hover {
 	color: #fff;
 }
+*/
 
-a,
-h2 a:hover,
+
+/* hovering over nav menu creates a background box and changes text to white r*/
 .genesis-nav-menu li a:hover,
 .genesis-nav-menu li:hover a,
-.genesis-nav-menu li li a:hover,
+.genesis-nav-menu li li a:hover {
+	background-color:#4f4f44;
+	color:#fff;
+}
+
+/* current menu item retains a gold box background */
 .genesis-nav-menu .current-menu-item a {
-	color: #b09815;
+	color:#fff;
+	background-color:#b09815;
 }
 
 .post-info,
@@ -359,10 +382,6 @@ h2 a:visited,
 	background-color:#444;
 }
 
-#wrap a {
-	color:#b09815;
-}
-
 #inner {
 	clear: both;
 	overflow: hidden;
@@ -444,11 +463,11 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-	border-bottom: 2px solid #1e1e1e;
 	min-height: 120px;
 	overflow: hidden;
 	padding-bottom: 32px;
 	padding-bottom: 2rem;
+	background-color:none;
 }
 
 #title {
@@ -515,7 +534,6 @@ h2 a:visited,
 
 .entry-content,
 .entry-content p {
-	color:#fff;
 	line-height: 1.625;
 }
 

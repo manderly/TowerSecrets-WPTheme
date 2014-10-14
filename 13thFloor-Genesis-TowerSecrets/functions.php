@@ -17,8 +17,8 @@ add_theme_support( 'custom-background' );
 
 // Add support for custom header
 add_theme_support( 'genesis-custom-header', array(
-	'width' => 1152,
-	'height' => 120
+	'width' => 688, //1152 original
+	'height' => 166 //120 original
 ) );
 
 // Add support for 3-column footer widgets
