@@ -384,8 +384,8 @@ h2 a:visited,
 #inner {
 	clear: both;
 	overflow: hidden;
-	padding-top: 40px;
-	padding-top: 2.5rem;
+	padding-top: 30px;
+	padding-top: 1.6rem;
 	background-color:black;
 	border:6px double rgb(38, 38, 30);
 }
@@ -712,12 +712,13 @@ p.pages,
 .breadcrumb,
 .sticky,
 .taxonomy-description {
-	background-color: #f5f5f5;
-	margin-bottom: 48px;
-	margin-bottom: 3rem;
+	background-color: #26261e;
+	margin-bottom: 12px;
+	margin-bottom: 1rem;
 	overflow: hidden;
-	padding: 32px;
-	padding: 2rem;
+	padding: 16px;
+	padding: 1rem;
+	font-size:.8em;
 }
 
 
