@@ -1,8 +1,8 @@
 /*
-	Theme Name: Genesis Sample
-	Description: This is the sample theme created for the Genesis Framework.
-	Author: StudioPress
-	Author URI: http://www.studiopress.com/
+	Theme Name: 13th Floor
+	Description: Genesis child theme created for TowerSecrets.
+	Author: MJ Grant
+	Author URI: http://mjgrant.org
  
 	Version: 1.9
  
@@ -15,7 +15,14 @@
 	License URI: http://www.opensource.org/licenses/gpl-license.php 
 */
  
-
+/* TowerSecrets color codes 
+ 	Brown nav bar: #26261e
+ 	Site background: #444
+ 	Tan link: #8d785d
+ 	Bright gold link: #b09815
+ 	Dark gold: #7f6e13 (border)
+ 
+ */
 /* Table of Contents
 
 	01 Import Fonts
@@ -85,10 +92,10 @@ time, mark, audio, video {
 
 html {
 	font-size: 100%; /* 16px browser default */
+	background-color:rgb(28, 8, 17);
 }
 
 body {
-	background-color: #fff;
 	line-height: 1;
 }
 
@@ -174,7 +181,7 @@ input,
 .post-comments,
 #title a,
 #title a:hover {
-	color: #1e1e1e;
+	color: #fff;
 }
 
 a,
@@ -183,7 +190,7 @@ h2 a:hover,
 .genesis-nav-menu li:hover a,
 .genesis-nav-menu li li a:hover,
 .genesis-nav-menu .current-menu-item a {
-	color: #ff2a00;
+	color: #b09815;
 }
 
 .post-info,
@@ -349,6 +356,11 @@ h2 a:visited,
 #wrap {
 	margin: 0 auto;
 	max-width: 1152px;
+	background-color:#444;
+}
+
+#wrap a {
+	color:#b09815;
 }
 
 #inner {
@@ -356,6 +368,8 @@ h2 a:visited,
 	overflow: hidden;
 	padding-top: 40px;
 	padding-top: 2.5rem;
+	background-color:black;
+	border:6px double rgb(38, 38, 30);
 }
 
 /* 04b - 1152px CSS Grid ----------- */
@@ -501,12 +515,14 @@ h2 a:visited,
 
 .entry-content,
 .entry-content p {
+	color:#fff;
 	line-height: 1.625;
 }
 
 .entry-content p {
 	margin-bottom: 26px;
 	margin-bottom: 1.625rem;
+	padding: 0 20px;
 }
 
 blockquote {
@@ -704,7 +720,8 @@ p.pages,
 
 .genesis-nav-menu.menu-primary,
 .genesis-nav-menu.menu-secondary {
-	border-bottom: 1px solid #ccc;
+	background-color:#26261e;
+	border-bottom: 4px solid #7f6e13;
 }
 
 .genesis-nav-menu ul {
@@ -720,10 +737,12 @@ p.pages,
 }
 
 .genesis-nav-menu a {
+	color:#8d785d;
 	display: block;
 	padding: 24px 20px;
 	padding: 1.5rem 1.25rem;
 	position: relative;
+	font-size:1.2em;
 }
 
 .genesis-nav-menu li.highlight-menu-item {
@@ -837,6 +856,7 @@ h6,
 	line-height: 1.2;
 	margin-bottom: 16px;
 	margin-bottom: 1rem;
+	padding-left: 20px;
 }
 
 .author-box h1 {

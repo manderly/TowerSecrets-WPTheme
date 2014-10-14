@@ -3,7 +3,7 @@
 require_once( get_template_directory() . '/lib/init.php' );
 
 // Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'Genesis Sample Theme' );
+define( 'CHILD_THEME_NAME', '13th Floor - Genesis Child Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
 
 // Add Viewport meta tag for mobile browsers
