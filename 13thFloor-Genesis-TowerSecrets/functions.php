@@ -23,3 +23,10 @@ add_theme_support( 'genesis-custom-header', array(
 
 // Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+//Changes "Speak your mind" to "Leave a comment"
+function change_default_comment_text($args) {
+    $args['title_reply'] = 'Leave a Comment';
+    return $args;
+}
+add_filter( 'genesis_comment_form_args', 'change_default_comment_text' );
