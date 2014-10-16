@@ -550,8 +550,8 @@ h2 a:visited,
 }
 
 blockquote {
-	padding: 24px 64px;
-	padding: 1.5rem 4rem;
+	padding: 12px 32px;
+	padding: .75rem 2rem;
 }
 
 blockquote::before {
@@ -1285,6 +1285,23 @@ p.wp-caption-text {
 .gallery-caption {
 }
 
+/* YARPP Added 10/16/2014 */
+
+.yarpp-related-widget { 
+	text-align: center !important;
+}
+
+.yarpp-thumbnails-horizontal .yarpp-thumbnail { 
+	width:20%;
+	height: 250px;
+	border:none;
+}
+
+.yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
+	overflow:visible;
+	font-size: .8em !important;
+	text-align:center;
+}
 
 /*
 14 Media Queries
@@ -1321,7 +1338,7 @@ p.wp-caption-text {
 	#wrap #content,
 	#wrap #content-sidebar-wrap,
 	#wrap #sidebar-alt {
-		width: 100%;
+		/*width: 100%;*/
 	}
 
 	.genesis-nav-menu li,
