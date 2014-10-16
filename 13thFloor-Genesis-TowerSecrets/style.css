@@ -1287,20 +1287,23 @@ p.wp-caption-text {
 
 /* YARPP Added 10/16/2014 */
 
-.yarpp-related-widget { 
+.yarpp-related { 
 	text-align: center !important;
 }
 
 .yarpp-thumbnails-horizontal .yarpp-thumbnail { 
-	width:20%;
-	height: 250px;
-	border:none;
+	height: 250px !important;
+	border:none !important;
+}
+
+.yarpp-related .yarpp-thumbnail-title { 
+	text-align:center !important;
+	font-weight:normal !important;
 }
 
 .yarpp-thumbnails-horizontal .yarpp-thumbnail-title {
-	overflow:visible;
-	font-size: .8em !important;
-	text-align:center;
+	overflow:visible !important;
+	font-size:.8em !important;
 }
 
 /*
