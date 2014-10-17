@@ -1077,7 +1077,6 @@ label {
 }
 
 #footer .wrap {
-	border-top: 2px solid #1e1e1e;
 	overflow: hidden;
 	padding: 48px 0;
 	padding: 3rem 0;
@@ -1102,6 +1101,10 @@ label {
 	overflow: hidden;
 	padding: 32px 0 16px;
 	padding: 2rem 0 1rem;
+	font-size:.75em;
+	border:6px double rgb(38,38,30);
+	margin-top:25px;
+	background-color:black;
 }
 
 .footer-widgets p {
@@ -1123,6 +1126,7 @@ label {
 
 .footer-widgets-1 {
 	margin-right: 4.166666666%; /* 48px / 1152px */
+	padding: 0 10px;
 }
 
 
@@ -1312,6 +1316,32 @@ p.wp-caption-text {
 	line-height:2em;
 	margin-left:20px;
 }
+
+.category-title {
+	line-height:2em;
+	text-align:center;
+	font-weight:bold;
+}
+
+/* Amazon affiliate widget */
+#disneyWidget {
+	text-align: center;
+}
+ 
+#disneyWidget img {
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+/* PayPal button styling */
+#paypal-button input {
+	background-color:transparent;
+	border:none;
+	box-shadow:none;
+	width:auto;
+}
+ 
+
 /*
 14 Media Queries
 ---------------------------------------------------------------------------------------------------- */

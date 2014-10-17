@@ -53,17 +53,24 @@ function mjg_show_titles_only_category_pages( $query ) {
 		$query->set( 'orderby', 'title' );
 		$query->set( 'order', 'ASC' );
 		
+		
+		
 		remove_action( 'genesis_loop', 'genesis_do_loop' );
 		add_action( 'genesis_loop', 'mjg_custom_loop' );
 	}
 }
  
 function mjg_custom_loop() {
- 
+	echo '<div class="category-title">';
+	single_cat_title( 'Category: ', true );
+	
+	echo '</div>';
+	
  	echo '<ul class="category-post-title-list">';
 	while (have_posts()) : the_post();
 		?>
 		<li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
 	<?php
 	endwhile;
+
 }
