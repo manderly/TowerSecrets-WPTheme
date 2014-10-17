@@ -1344,6 +1344,11 @@ p.wp-caption-text {
 }
  
 
+/* Fixing Ess. Grid right padding */
+.esg-overflowtrick {
+	padding-right:8% !important;	
+}
+
 /*
 14 Media Queries
 ---------------------------------------------------------------------------------------------------- */
