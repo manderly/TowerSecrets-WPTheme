@@ -123,6 +123,7 @@ input[type="submit"],
 	-moz-transition: all 0.1s ease-in-out;
 	-webkit-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
+	color:#967a56;
 }
 
 ::-moz-selection {
@@ -1080,6 +1081,7 @@ label {
 	overflow: hidden;
 	padding: 48px 0;
 	padding: 3rem 0;
+	text-align:center;
 }
 
 #footer .creds {

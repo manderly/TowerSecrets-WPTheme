@@ -72,5 +72,17 @@ function mjg_custom_loop() {
 		<li><a href="<?php the_permalink() ?>"><?php the_title() ?></a></li>
 	<?php
 	endwhile;
+}
 
+// Customize footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'mjg_footer' );
+function mjg_footer() {
+    ?>
+    <div id="bottom-footer">
+    <p>&copy; Copyright 2014</p>
+    </br>
+    <p>TowerSecrets is rockin' "13th Floor", a custom <a href="https://wordpress.org/">WordPress</a> theme for the <a href="http://my.studiopress.com/themes/genesis/">Genesis framework</a>. Site design by <a href="http://mjgrant.org">M. Grant</a></p>
+    </div>
+    <?php
 }
