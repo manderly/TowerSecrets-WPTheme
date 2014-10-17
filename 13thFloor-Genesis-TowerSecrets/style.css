@@ -1306,6 +1306,12 @@ p.wp-caption-text {
 	font-size:.8em !important;
 }
 
+/* Category page specific styling added 10/16/2014 */
+.category-post-title-list {
+	list-style:none;
+	line-height:2em;
+	margin-left:20px;
+}
 /*
 14 Media Queries
 ---------------------------------------------------------------------------------------------------- */
