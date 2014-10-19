@@ -325,8 +325,8 @@ textarea,
 .post-meta,
 .wp-caption,
 #footer p {
-	font-size: 14px;
-	font-size: 0.875rem;
+	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 
@@ -356,7 +356,6 @@ h6,
 .post-info .author,
 .post-info .date,
 .wp-caption,
-#footer p,
 #title {
 	font-weight: 700;
 }
@@ -968,12 +967,12 @@ h6,
 #respond {
 	line-height: 1.5;
 	overflow: hidden;
+	margin:0 20px;
 }
 
 .ping-list,
 #comments {
-	margin-bottom: 48px;
-	margin-bottom: 3rem;
+	margin:0 20px;
 }
 
 #author,
@@ -1019,9 +1018,7 @@ label {
 }
 
 .comment {
-	background-color: #f5f5f5;
-	border: 2px solid #fff;
-	border-right: none;
+	background-color: #222;
 }
 
 .comment-content p {
@@ -1037,6 +1034,10 @@ label {
 	margin-top: 2rem;
 }
 
+#reply-title {
+	padding-left:0;
+	margin-top:10px;
+}
 
 /*
 10 Sidebars
