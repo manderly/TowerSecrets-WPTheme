@@ -1350,7 +1350,16 @@ p.wp-caption-text {
 	padding-right:8% !important;	
 }
 
-/*
+/* Tablepress */
+.tablepress {
+	margin: 0 auto !important;
+	width:90% !important;
+}
+
+.tablepress thead th {
+	border-bottom:none !important;
+}
+
 14 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
