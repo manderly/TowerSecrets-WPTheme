@@ -723,7 +723,8 @@ p.pages,
 	overflow: hidden;
 	padding: 16px;
 	padding: 1rem;
-	font-size:.8em;
+	font-size:1em;
+	line-height:1.5em;
 }
 
 
@@ -1445,6 +1446,10 @@ p.wp-caption-text {
 		margin: 0;
 	}
 
+	#header {
+		background-size:auto auto !important;
+	}
+
 }
 
 /* iPhones (portrait and landscape) ----------- */
@@ -1477,5 +1482,13 @@ p.wp-caption-text {
 	.two-thirds {
 		margin: 0;
 		width: 100%;
+	}
+
+	#header {
+		background-size:auto auto !important;
+	}
+
+	.genesis-nav-menu a {
+		font-size:1.6em !important;
 	}
 }
