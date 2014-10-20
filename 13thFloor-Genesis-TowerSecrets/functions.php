@@ -21,6 +21,12 @@ add_theme_support( 'genesis-custom-header', array(
 	'height' => 166 //120 original
 ) );
 
+// Adding custom Favicon 
+add_filter( 'genesis_pre_load_favicon', 'custom_favicon' );
+function custom_favicon( $favicon_url ) {
+    return 'http://towersecrets.com/favicon.ico';
+}
+
 // Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
