@@ -278,18 +278,18 @@ h6,
 h1,
 .entry-title,
 .entry-title a {
-	font-size: 36px;
-	font-size: 2.25rem;
-}
-
-blockquote::before {
-	font-size: 32px;
+	font-size: 34px;
 	font-size: 2rem;
 }
 
-h2 {
+blockquote::before {
 	font-size: 30px;
 	font-size: 1.875rem;
+}
+
+h2 {
+	font-size: 28px;
+	font-size: 1.75rem;
 }
 
 h3 {
@@ -467,10 +467,8 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-	min-height: 130px;
+	/*min-height: 130px;*/
 	overflow: hidden;
-	padding-bottom: 32px;
-	padding-bottom: 2rem;
 	background-color:transparent;
 }
 
@@ -501,7 +499,7 @@ h2 a:visited,
 .header-image #title-area {
 	display: block;
 	float: left;
-	min-height: 130px;
+	/*min-height: 130px;*/
 	overflow: hidden;
 	text-indent: -9999px;
 	width: 50%;
@@ -1099,7 +1097,6 @@ label {
 /* 11a - Footer Widgets ----------- */
 
 .footer-widgets {
-	border-top: 2px solid #1e1e1e;
 	clear: both;
 	line-height: 1.5;
 	overflow: hidden;
@@ -1359,6 +1356,13 @@ p.wp-caption-text {
 
 .tablepress thead th {
 	border-bottom:none !important;
+}
+
+
+/* Giant clickable pixel */
+#pixel img {
+	width:688px;
+	height:166px;
 }
 
 14 Media Queries

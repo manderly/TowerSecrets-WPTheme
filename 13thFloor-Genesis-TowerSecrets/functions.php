@@ -6,7 +6,8 @@ require_once( get_template_directory() . '/lib/init.php' );
 define( 'CHILD_THEME_NAME', '13th Floor - Genesis Child Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
 
-// Add Viewport meta tag for mobile browsers
+// Add Viewport meta tag for mobile browsers and starts the site zoomed to 1.0
+//removal candidate
 add_action( 'genesis_meta', 'sample_viewport_meta_tag' );
 function sample_viewport_meta_tag() {
 	echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
@@ -21,13 +22,22 @@ add_theme_support( 'genesis-custom-header', array(
 	'height' => 166 //120 original
 ) );
 
+//Add a clickable image as the header
+function inject_clickable_header(){ ?>
+<div id="title-area">
+<a href="http://towersecrets.com/"><img src="http://towersecrets.com/wp-content/uploads/2014/10/cropped-tower_secrets_banner.png"/></a>
+</div>
+<?php }
+add_action('genesis_header','inject_clickable_header');
+
+
 // Adding custom Favicon 
 add_filter( 'genesis_pre_load_favicon', 'custom_favicon' );
 function custom_favicon( $favicon_url ) {
     return 'http://towersecrets.com/favicon.ico';
 }
 
-// Add support for 3-column footer widgets
+// Add support for 3-column footer widget
 add_theme_support( 'genesis-footer-widgets', 3 );
 
 //Changes "Speak your mind" to "Leave a comment"
@@ -37,6 +47,7 @@ function change_default_comment_text($args) {
 }
 add_filter( 'genesis_comment_form_args', 'change_default_comment_text' );
 
+//YARPP: Removes the built-in styles that YARPP comes with
 add_action('wp_print_styles','lm_dequeue_header_styles');
 function lm_dequeue_header_styles()
 {
@@ -69,9 +80,7 @@ function mjg_show_titles_only_category_pages( $query ) {
 function mjg_custom_loop() {
 	echo '<div class="category-title">';
 	single_cat_title( 'Category: ', true );
-	
 	echo '</div>';
-	
  	echo '<ul class="category-post-title-list">';
 	while (have_posts()) : the_post();
 		?>
@@ -80,7 +89,7 @@ function mjg_custom_loop() {
 	endwhile;
 }
 
-// Customize footer
+// Customize footer text
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'mjg_footer' );
 function mjg_footer() {
